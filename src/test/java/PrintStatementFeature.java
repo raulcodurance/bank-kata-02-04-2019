@@ -10,15 +10,18 @@ import org.mockito.runners.MockitoJUnitRunner;
 public class PrintStatementFeature {
 
     @Mock Console console;
+    @Mock Clock clock;
 
     private Account account;
     private TransactionRepository transactionRepository;
+    private StatementPrinter statementPrinter;
 
     @Before
     public void setUp() throws Exception {
 
-        this.transactionRepository = new TransactionRepository();
-        this.account = new AccountImpl(transactionRepository);
+        this.transactionRepository = new TransactionRepository(clock);
+        this.statementPrinter = new StatementPrinter();
+        this.account = new AccountImpl(transactionRepository, statementPrinter);
     }
 
     @Test

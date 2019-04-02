@@ -1,9 +1,11 @@
 public class AccountImpl implements Account {
 
     private TransactionRepository transactionRepository;
+    private StatementPrinter statementPrinter;
 
-    public AccountImpl(TransactionRepository transactionRepository) {
+    public AccountImpl(TransactionRepository transactionRepository, StatementPrinter statementPrinter) {
         this.transactionRepository = transactionRepository;
+        this.statementPrinter = statementPrinter;
     }
 
     @Override
@@ -21,5 +23,6 @@ public class AccountImpl implements Account {
     @Override
     public void printStatement() {
 
+        statementPrinter.print(transactionRepository.allTransactions());
     }
 }

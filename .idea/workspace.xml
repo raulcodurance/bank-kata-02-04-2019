@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cd0fc0b-3a7f-42cf-ba91-bf48dd367b95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AccountImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AccountShould.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PrintStatementFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Clock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StatementPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ClockShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TransactionRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/AccountImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/AccountImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/TransactionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/TransactionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/AccountShould.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/AccountShould.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/PrintStatementFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/PrintStatementFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AccountImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AccountImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AccountShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PrintStatementFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PrintStatementFeature.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -26,10 +34,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AccountShould.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ClockShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="696">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -56,11 +64,17 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/Writer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PrintStatementFeature.java" />
         <option value="$PROJECT_DIR$/src/main/java/Account.java" />
-        <option value="$PROJECT_DIR$/src/test/java/AccountShould.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TransactionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/AccountImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StatementPrinter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/AccountShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PrintStatementFeature.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TransactionRepositoryShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TransactionRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ClockTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Clock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ClockShould.java" />
       </list>
     </option>
   </component>
@@ -123,9 +137,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554214852392" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554218630170" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="protected" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -150,31 +165,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountShould.store_a_withdraw_transaction">
-    <configuration name="AccountShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PrintStatementFeature">
+    <configuration name="All in com.raul.katas.bank-kata-02-04-2019.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.raul.katas.bank-kata-02-04-2019.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountShould" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClockShould (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.raul.katas.bank-kata-02-04-2019.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ClockShould" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountShould.store_a_deposit_transaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClockShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.raul.katas.bank-kata-02-04-2019.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountShould" />
-      <option name="METHOD_NAME" value="store_a_deposit_transaction" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ClockShould" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountShould.store_a_withdraw_transaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClockShould.return_today_as_dd_MM_yyyy_format" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.raul.katas.bank-kata-02-04-2019.test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AccountShould" />
-      <option name="METHOD_NAME" value="store_a_withdraw_transaction" />
+      <option name="MAIN_CLASS_NAME" value="ClockShould" />
+      <option name="METHOD_NAME" value="return_today_as_dd_MM_yyyy_format" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,10 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountShould.store_a_withdraw_transaction" />
-        <item itemvalue="JUnit.AccountShould.store_a_deposit_transaction" />
         <item itemvalue="JUnit.PrintStatementFeature" />
-        <item itemvalue="JUnit.AccountShould" />
+        <item itemvalue="JUnit.ClockShould (1)" />
+        <item itemvalue="JUnit.ClockShould.return_today_as_dd_MM_yyyy_format" />
+        <item itemvalue="JUnit.ClockShould" />
+        <item itemvalue="JUnit.All in com.raul.katas.bank-kata-02-04-2019.test" />
       </list>
     </recent_temporary>
   </component>
@@ -212,31 +235,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PrintStatementFeature - 2019.04.02 at 15h 21m 34s.xml">
-      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    <history-entry file="TransactionRepositoryShould - 2019.04.02 at 17h 08m 59s.xml">
+      <configuration name="TransactionRepositoryShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrintStatementFeature - 2019.04.02 at 15h 22m 20s.xml">
-      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    <history-entry file="TransactionRepositoryShould - 2019.04.02 at 17h 09m 15s.xml">
+      <configuration name="TransactionRepositoryShould" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrintStatementFeature - 2019.04.02 at 15h 52m 32s.xml">
-      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    <history-entry file="TransactionRepositoryShould_create_and_Store_a_withdraw_transaction - 2019.04.02 at 17h 10m 36s.xml">
+      <configuration name="TransactionRepositoryShould.create_and_Store_a_withdraw_transaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrintStatementFeature - 2019.04.02 at 15h 53m 00s.xml">
-      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    <history-entry file="TransactionRepositoryShould_create_and_Store_a_withdraw_transaction - 2019.04.02 at 17h 10m 58s.xml">
+      <configuration name="TransactionRepositoryShould.create_and_Store_a_withdraw_transaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrintStatementFeature - 2019.04.02 at 15h 53m 56s.xml">
-      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    <history-entry file="TransactionRepositoryShould_create_and_Store_a_withdraw_transaction - 2019.04.02 at 17h 13m 05s.xml">
+      <configuration name="TransactionRepositoryShould.create_and_Store_a_withdraw_transaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PrintStatementFeature - 2019.04.02 at 16h 07m 54s.xml">
-      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    <history-entry file="TransactionRepositoryShould_create_and_Store_a_withdraw_transaction - 2019.04.02 at 17h 13m 20s.xml">
+      <configuration name="TransactionRepositoryShould.create_and_Store_a_withdraw_transaction" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountShould - 2019.04.02 at 16h 16m 16s.xml">
-      <configuration name="AccountShould" configurationId="JUnit" />
+    <history-entry file="All_in_com_raul_katas_bank-kata-02-04-2019_test - 2019.04.02 at 17h 13m 56s.xml">
+      <configuration name="All in com.raul.katas.bank-kata-02-04-2019.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClockShould - 2019.04.02 at 17h 17m 35s.xml">
+      <configuration name="ClockShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClockShould - 2019.04.02 at 17h 19m 10s.xml">
+      <configuration name="ClockShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClockShould_return_today_as_dd_MM_yyyy_format - 2019.04.02 at 17h 19m 34s.xml">
+      <configuration name="ClockShould.return_today_as_dd_MM_yyyy_format" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-536" y="-1417" width="2560" height="1417" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -293,15 +324,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        <state relative-caret-position="120">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AccountImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StatementPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/AccountShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="49" column="80" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TransactionRepositoryShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1010">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PrintStatementFeature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="360">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -311,21 +387,29 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/TransactionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AccountImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Clock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AccountShould.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ClockShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="696">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
